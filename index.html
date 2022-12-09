@@ -37,7 +37,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("field-sky.jpg");
+  background-image: url("ocean.jpg");
   min-height: 400px;
 }
 
@@ -53,6 +53,7 @@ body, html {
 }
 </style>
 </head>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -88,10 +89,10 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center">Hi, my name's Elliot! I'm a second year Computational Media major at Georgia Tech. Most of my experience in visual art has been in photography, although I have tried my hand at painting,
-    drawing, and digital art. More recently, I have learned how to use Adobe Photoshop, Illustrator, and InDesign to create and present my own designs. In my free time, I enjoy reading, writing, 
-    and making music.
+  <h3 class="w3-center" style="font-size:20pt">ABOUT ME</h3>
+  <p class="w3-center" style="font-size:14pt">Hi, my name's Elliot! I'm a second year Computational Media major at Georgia Tech. Most of my experience in visual art has been
+    in photography, although I have tried my hand at painting, drawing, and digital art. More recently, I have learned how to use Adobe Photoshop, Illustrator, and InDesign
+    to create and present my own designs. In my free time, I enjoy reading, writing, and making music.
   </p>
 
   <div class="w3-row">
@@ -104,20 +105,6 @@ body, html {
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <img src="mountain.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="mountain" width="500" height="333">
     </div>
-  </div>
-
-  <h3 class="w3-large w3-center w3-padding-16">Some of my skills:</h3>
-  <h5><i class="fa fa-camera"></i>    Photography</h5>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <h5><i class="fa fa-laptop"></i>    Illustrator</h5>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <h5><i class="fa fa-photo"></i>    Web Design</h5>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
   </div>
 </div>
 
@@ -141,6 +128,7 @@ body, html {
   </div>
 </div>
 -->
+
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -150,9 +138,24 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here's some of my recent work!<br> Click on the images to make them larger.</em></p><br>
+  <h3 class="w3-center" style="font-size:20pt">MY WORK</h3>
+  
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="urban-sprawl.jpeg" class="w3-image w3-round" style="width:450px">
+    </div>
+    <p class="w3-col m4" style="font-size:14pt">Some of my favorite projects that I've done are ones that I compelted for my high school art class. I was given the opportunity
+      to experiment with whatever medium I wanted, as well as whatever subject matter. I found that I enjoyed creating works that incorporated bold text and bright colors.
+    </p>
+    <div class="w3-col m4 w3-container">
+      <img src="sun-down.jpeg" class="w3-image w3-round" style="width:450px">
+    </div>
+  </div>
 
+  <p class="w3-center" style="font-size:14pt">My tendency towards bright colors didn't stop after high school art. When I came to college, I started as an architecture major,
+    meaning that I spent my first year taking multiple design-based classes. One of these classes gave me the chance to learn how to use digital softwware for art, such as
+    Illustrator and Photoshop. These are some of the pieces I made for that class; they were intended as color studies based on photos of physical models that we made.
+  </p>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
@@ -172,6 +175,34 @@ body, html {
     </div>
   </div>
 
+  <p class="w3-center" style="font-size:14pt">In my architecture studio course, I learned how to make physical models by hand before I did any digital modelling. I made models
+    from various materials and learned how to cut the necessary pieces by hand. In the second semester, I was given the chance to create models digitally, as well as other visual
+    representations of my design. Although I ultimately decided architecture wasn't for me, I feel that I learned plenty of things about visual design that I hope to take into
+    whatever career I decide to pursue.
+  </p>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="4-18-iso.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Digital diagram of a building design">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="egg-beater-layout.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Digital diagrams of an egg beater">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="IMG_8983.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Physical model of a building design">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="arch-p4-model-7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Physical model of a building design">
+    </div>
+  </div>
+
+  <p class="w3-center" style="font-size:14pt">Although it may not be as closely tied to what I would like to do as a career, I have always been a fan of photography.
+    Whenever I get the chance, I enjoy going and taking photos of the world around me to try and capture a moment in a way that might be unexpected. Photography allows
+    me to experiment with color and composition in interesting ways.
+  </p>
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
       <img src="flowers.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Flowers">
@@ -182,13 +213,12 @@ body, html {
     </div>
 
     <div class="w3-col m3">
-      <img src="ocean.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ocean">
+      <img src="tree-reflection.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Reflection of trees">
     </div>
 
     <div class="w3-col m3">
       <img src="sunset.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset">
     </div>
-    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
   </div>
 </div>
 
@@ -210,7 +240,7 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">REACH OUT</h3>
+  <h3 class="w3-center" style="font-size:20pt">REACH OUT</h3>
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
       <img src="window.jpg" class="w3-image w3-round" style="width:100%">
@@ -221,7 +251,7 @@ body, html {
         <!--<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>-->
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ebemis7@gatech.edu<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p> -->
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
